@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .register-div{
+            background: linear-gradient(45deg,blueviolet,deeppink);
+            width: 300px;
+            padding: 15px;
+            color: white;
+            box-shadow: 0 5px 10px black;
+            border-radius: 15px;
+            margin: 50px auto;
+            }
+            .register-div h1{
+            text-align: center;
+        }
+        .register-form label{
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .register-form .form-control{
+            font-size: 18px;
+            height: 40px;
+            width: 290px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+        .register-form .form-control:focus{
+            background-color: #eba1df;
+        }
+
+        .register-form .submit-btn{
+           display: block;
+           margin: 15px 0;
+           background: linear-gradient(45deg,blueviolet,deeppink);
+           color: white;
+           font-size: 18px;
+           padding: 12px 25px;
+           width: 290px;
+           margin: 20px auto;
+           border: none;
+           outline: none;
+           box-shadow: 0 5px 10px black;
+           border-radius: 15px;
+       }
+        .fa-user-circle{
+            text-align: center;
+            display: block;
+            font-size: 80px;
+            border:10px solid lightcoral;
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            border-radius: 50%;
+            box-shadow: 0 5px 10px black;
+            margin-top: -50px;
+            background-color: #dd179a;
+        }
+
+    </style>
+</head>
+<body>
+ <!-- Registration Form -->
+    <div class="register-div animated jello">
+        <i class="fa fa-user-circle"></i>
+        <h1>Register Here</h1>
+        <form class="register-form">
+            <div class="form-group">
+                <label>UserName</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Designation</label>
+                <select class="form-control">
+                    <option value="">Select a Designation</option>
+                    <option value="">Software Engineer</option>
+                    <option value="">Sr.Software Engineer</option>
+                    <option value="">Tech Lead</option>
+                    <option value="">Asst. Project Manager</option>
+                    <option value="">Project Manager</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Register" class="submit-btn">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

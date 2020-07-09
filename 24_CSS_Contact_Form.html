@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Contact Form</title>
+    <style>
+        .contact-div{
+            box-shadow: 0 0 10px black;
+            width: 250px;
+            padding: 15px;
+            font-family: Arial,sans-serif;
+            background: linear-gradient(45deg,black,teal);
+            color: white;
+        }
+        .contact-div h2{
+            text-align: center;
+        }
+        .contact-form label{
+            display: block;
+        }
+        .form-field{
+            font-size: 20px;
+            width: 240px;
+            height: 35px;
+            margin: 5px 0;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-group textarea{
+            margin: 5px 0;
+            width: 235px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+        .form-group #contact-btn{
+            background: linear-gradient(45deg,black,teal);
+            color: white;
+            border: none;
+            outline: none;
+            padding: 14px 25px;
+            width: 240px;
+            margin: 5px 0;
+            box-shadow: 0 0 2px white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-div">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label>NAME</label>
+                <input type="text" class="form-field">
+            </div>
+            <div class="form-group">
+                <label>EMAIL</label>
+                <input type="email" class="form-field">
+            </div>
+            <div class="form-group">
+                <label>SUBJECT</label>
+                <select class="form-field">
+                    <option>Select Option</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>JQuery</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>MESSAGE</label>
+                <textarea rows="4" cols="30"></textarea>
+            </div>
+            <div class="form-group">
+               <input type="submit" value="Contact Us" id="contact-btn">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

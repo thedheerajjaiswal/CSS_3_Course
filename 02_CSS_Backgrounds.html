@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+            margin-bottom: 500px;
+        }
+        #bg-color{
+            background-color: teal;
+        }
+        #bg-image{
+            width: 500px;
+            box-shadow: 0 5px 10px black;
+            padding: 15px;
+            background-image: url("img/image3.jpeg");
+        }
+        #bg-repeat{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 5px 10px black;
+            background: lightsalmon url("img/nature.jpg") repeat-x scroll top right;
+        }
+
+        #bg-position{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 5px 10px black;
+            background: lightsalmon url("img/nature.jpg") no-repeat scroll bottom right;
+        }
+        #bg-attachment{
+            height: 200px;
+            box-shadow: 0 5px 10px black;
+            background: white url("img/image5.jpeg") no-repeat fixed center;
+        }
+        #bg-size{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 5px 10px black;
+            background-image: url("img/image3.jpeg");
+            background-size: cover;
+        }
+        #gradient{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 5px 10px black;
+            background: linear-gradient(45deg,blueviolet,deeppink);
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Background Color
+        Image
+        Attachment
+        Repeat
+        Position
+        Linear-Gradient
+    -->
+    <h2>Background Color</h2>
+    <div id="bg-color">
+        <h2>Iam with Teal color background</h2>
+    </div>
+
+    <h2>Background Image</h2>
+    <div id="bg-image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aliquam cumque dolores expedita facilis harum, illum itaque modi nam non odio officia officiis perspiciatis quae quia quisquam quos sint ut vitae. Aut iste magnam officiis vero? Doloribus ea in praesentium quae quod reprehenderit tempora unde vitae. Adipisci, cupiditate in.</p>
+    </div>
+
+    <h2>Background Attachment</h2>
+    <div id="bg-attachment">
+
+    </div>
+
+    <h2>Background Repeat</h2>
+    <div id="bg-repeat">
+
+    </div>
+
+    <h2>Background Position</h2>
+    <div id="bg-position">
+
+    </div>
+
+    <h2>Background Size</h2>
+    <div id="bg-size">
+
+    </div>
+
+    <h2>Gradient</h2>
+    <div id="gradient">
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        .simple{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 20px solid limegreen;
+            border-radius: 50%;
+            box-shadow: 0 5px 10px black;
+            animation: simple 2s infinite linear 0s;
+        }
+        @keyframes simple {
+           0% , 50% , 100%{
+               background-color: lightgreen;
+               border: 20px solid limegreen;
+               transform: scale(0.5,0.5);
+           }
+            25% , 75%{
+                background-color: limegreen;
+                border: 20px solid lightgreen;
+                transform: scale(1.2,1.2);
+            }
+        }
+
+        .spin{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 25px solid lightblue;
+            box-shadow: 0 0 10px black;
+            border-top: 25px solid navy;
+            border-bottom: 25px solid blueviolet;
+            animation: spin 2s infinite linear 0s;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg) scale(0.5,0.5);
+            }
+            100%{
+                transform: rotate(360deg) scale(1.2,1.2);
+            }
+        }
+
+        .news{
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0 5px 10px black;
+            overflow: hidden;
+        }
+        .news p{
+            margin: 0;
+            animation: move 10s infinite linear;
+        }
+        @keyframes move {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 200px;
+            background-color: blueviolet;
+            box-shadow: 0 0 10px black;
+            position: relative;
+            animation: box 4s infinite linear;
+        }
+        @keyframes box {
+            0%{
+                top: 0;
+                left: 0;
+                border-radius: 0;
+            }
+            25%{
+                top: 0;
+                left: 200px;
+                border-radius: 50% 0 0 0;
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+                border-radius: 50% 50% 0 0;
+            }
+            75%{
+                top: 200px;
+                left: 0;
+                border-radius: 50% 50% 50% 0;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+            }
+        }
+        .name{
+            animation: name 2s infinite linear;
+        }
+        @keyframes name{
+            0% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Simple Animation</h3>
+    <div class="simple"></div>
+
+    <hr>
+
+    <h3>Spin Animation</h3>
+    <div class="spin"></div>
+
+    <hr>
+
+    <h3>News Animation</h3>
+    <div class="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <hr>
+
+    <!-- Box Animation -->
+    <h3>Box Animation</h3>
+    <div class="box"></div>
+
+    <hr>
+
+    <!-- Foot Ball Animation -->
+    <h3>Foot Ball Animation</h3>
+    <div class="football"></div>
+    <hr>
+
+    <h3>Name Animation</h3> 
+    <div class="name">
+        <span style="background-color: fuchsia;">D</span>
+        <span style="background-color: gainsboro;">H</span>
+        <span style="background-color: goldenrod;">E</span>
+        <span style="background-color: greenyellow;">E</span>
+        <span style="background-color: darkmagenta;">R</span>
+        <span style="background-color: darksalmon;">A</span>
+        <span style="background-color: deepskyblue;">J</span>
+        <span style="background-color: firebrick;">J</span>
+        <span style="background-color: gainsboro;">A</span>
+        <span style="background-color: lightcoral;">I</span>
+    </div>
+
+</body>
+</html>

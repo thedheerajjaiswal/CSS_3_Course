@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positions</title>
+    <style>
+        body{
+            margin-bottom: 2000px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 10px black;
+        }
+        .box1{
+            background-color: limegreen;
+            position: relative;
+            left: 500px;
+            top: 50px;
+            z-index: 3;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0,0,0,0.5);
+            position: relative;
+            left: 500px;
+            z-index: 2;
+        }
+        .box2{
+            background-color: yellow;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        .box3{
+            background-color: red;
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+        .box4{
+            background-color: teal;
+            position: fixed;
+            top: 300px;
+            right: 300px;
+            z-index: 1;
+        }
+        .box5{
+            background-color: purple;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box box1"></div>
+    <div class="container">
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut esse facere fugit nihil non odit reprehenderit similique sit ut voluptatum! Ad amet asperiores atque consequuntur dolorem eaque eius est ex excepturi explicabo maxime nihil nobis odit quas quibusdam, reprehenderit sint tempora. Consequuntur explicabo impedit quidem reiciendis repellat vero. A aliquid animi commodi consectetur corporis debitis deleniti enim esse excepturi fuga fugit illo illum inventore ipsa laborum laudantium nulla numquam perferendis porro, possimus quam qui, quia quis ratione repellendus vel veritatis. Ab architecto asperiores aspernatur deleniti dolores earum fuga harum illo iste laborum, minima minus nam nemo, nostrum numquam, perspiciatis quaerat quidem quo quod ratione recusandae rem repudiandae sint vel vero? Atque beatae deleniti deserunt, dignissimos, dolorem doloremque dolores enim eos est exercitationem laborum laudantium minima molestias nemo nostrum omnis perspiciatis qui recusandae repellendus, rerum tenetur veritatis voluptatum! A accusantium ad at aut, beatae consectetur distinctio dolores earum hic, illum, itaque magnam maxime nobis perspiciatis possimus qui recusandae repellendus totam voluptate voluptatum. Aut cupiditate distinctio dolores earum, et iure labore magnam nemo neque nesciunt quae quasi quos ratione recusandae reprehenderit sequi sunt ut veniam. Aperiam deleniti dolor nesciunt odit, optio possimus provident qui ut vero. Aliquam aspernatur beatae blanditiis consequuntur cum debitis delectus dolores eius error eum excepturi exercitationem facere facilis hic illo incidunt iste magnam nam natus nihil nisi odio optio porro quaerat quia quod quos reprehenderit saepe sapiente, sed sequi similique, sit sunt vel voluptas voluptatibus, voluptatum. Ab accusamus aliquid animi commodi cupiditate doloribus harum molestias nihil, non placeat, quam quia quis quod? Ab dolore est fuga hic modi recusandae, sed! Architecto asperiores, assumenda atque aut blanditiis commodi dolores ducimus, est ipsam laborum, nisi nobis perferendis quae quod ratione recusandae sequi totam ut. Accusantium aperiam atque aut facilis, harum hic molestiae mollitia reiciendis voluptas! Aut dolores, totam. Assumenda autem dolorem facere laborum modi nobis quos rerum totam vero voluptatum? Cupiditate, nihil, non? Aperiam doloremque esse minus neque vitae voluptate? Enim laborum provident quaerat quo similique. Ad, aspernatur autem blanditiis eligendi est ex nemo odio omnis optio perspiciatis quasi ratione ut, velit vero voluptate. Ab autem consequuntur, culpa cumque delectus dolore error esse eveniet hic illo incidunt iste iusto libero magnam nam neque nobis obcaecati officia optio provident quisquam reiciendis repudiandae sit sunt suscipit tempore totam unde vitae voluptatem voluptatum? Blanditiis, natus, perferendis! Aspernatur dolore doloremque ea excepturi odit, provident. Iusto nisi odio sapiente sed voluptatibus. A ab amet, aspernatur beatae dicta distinctio dolore eaque earum eligendi est explicabo harum illo illum labore laborum modi nisi nobis, qui soluta velit. Amet animi asperiores aspernatur assumenda aut commodi corporis distinctio dolor dolorum ea eaque eligendi eos est eveniet facilis impedit itaque iure maiores molestiae molestias nemo, neque nihil nisi numquam provident quas quis ratione repellat rerum saepe sapiente soluta sunt totam vel vero voluptatibus voluptatum. Deleniti, officia, possimus. Atque debitis itaque nam praesentium quis temporibus tenetur voluptate voluptatem. Aspernatur excepturi maxime natus nostrum placeat quae quia rerum sapiente sequi similique. Cumque dolor dolorem est explicabo fuga ipsa omnis quam quibusdam, sapiente!</p>
+
+</body>
+</html>

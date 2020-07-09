@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Vertical Navigation</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        aside{
+            background: linear-gradient(45deg,blueviolet,deeppink);
+            float: left;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 5px 10px black;
+            padding: 10px;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+        aside a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            padding: 14px 25px;
+        }
+        aside a:hover{
+            background: linear-gradient(45deg,blueviolet,deeppink);
+            border-radius: 50px;
+            box-shadow: 0 0 10px black;
+        }
+        aside img{
+            width: 120px;
+            height: 120px;
+            border: 15px solid blueviolet;
+            border-radius: 50%;
+            box-shadow: 0 0 10px black;
+            margin: 20px 0 25px 0;
+        }
+    </style>
+</head>
+<body>
+
+   <aside>
+       <img src="img/user.png">
+       <a href="">HTML</a>
+       <a href="">CSS</a>
+       <a href="">JavaScript</a>
+       <a href="">JQuery</a>
+       <a href="">AJAX</a>
+       <a href="">Bootstrap</a>
+   </aside>
+
+
+</body>
+</html>

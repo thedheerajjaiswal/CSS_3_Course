@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Borders</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin-bottom: 500px;
+        }
+        .basic{
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+            width: 500px;
+        }
+        .border-all{
+            border: 10px solid limegreen;
+        }
+        .border-one{
+            border-left: 10px solid limegreen;
+        }
+        .border-colors{
+            border-left: 20px solid limegreen;
+            border-right: 20px solid limegreen;
+            border-top: 10px solid green;
+            border-bottom: 10px solid green;
+        }
+        .border-rounded{
+            border: 10px solid limegreen;
+            border-radius: 30px;
+        }
+        .border-rounded-two{
+            border: 10px solid limegreen;
+            border-radius: 50% 0 50% 0;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg,black,blue);
+            border: 25px solid darkblue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+      border widths ,styles , colors , sides , rounded , custom
+     -->
+
+    <h2>Border All Sides</h2>
+    <div class="basic border-all">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Border Single Side</h2>
+    <div class="basic border-one">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Border with colors</h2>
+    <div class="basic border-colors">
+        <h1>Good Morning</h1>
+    </div>
+
+
+    <h2>Border with Rounded Corners</h2>
+    <div class="basic border-rounded">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Border with Rounded Corners two</h2>
+    <div class="basic border-rounded-two">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>circle</h2>
+    <div class="circle">
+
+    </div>
+
+</body>
+</html>

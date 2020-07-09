@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Two</title>
+    <style>
+        input[type="text"]{
+            background-color: lightgreen;
+        }
+        input[type="text"]:focus{
+            background-color: black;
+            color: white;
+            border: 2px solid gray;
+            outline: none;
+            border-radius: 5px;
+        }
+
+
+        input[type="password"]{
+            background-color: lightblue;
+        }
+        input[type='submit']{
+            background-color: red;
+            transition: all 0.5s;
+        }
+        input[type='submit']:hover{
+            background-color: limegreen;
+            font-size: 25px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label>Username</label>
+        <input type="text">
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS TABLES</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        table , th , td{
+            border: none;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+        table{
+            width: 100%;
+        }
+        thead{
+            background-color: darkred;
+            color: white;
+        }
+        tbody tr:nth-child(even){
+            background-color: lightsalmon;
+        }
+        tbody tr:nth-child(odd){
+            background-color: coral;
+        }
+        table td , table th{
+            border-radius: 50px;
+            box-shadow: 0 0 10px black;
+        }
+        tbody td:hover{
+            background-color: orangered;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CUSTOM TABLE -->
+    <table>
+        <thead>
+            <tr>
+                <th>Emp Name</th>
+                <th>Designation</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Mayor</td>
+                <td>Software Engineer</td>
+                <td>Microsoft</td>
+            </tr>
+            <tr>
+                <td>Alex Ben</td>
+                <td>Software Engineer</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Software Engineer</td>
+                <td>Microsoft</td>
+            </tr>
+            <tr>
+                <td>Alex Ben</td>
+                <td>Software Engineer</td>
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Software Engineer</td>
+                <td>Microsoft</td>
+            </tr>
+            <tr>
+                <td>Alex Ben</td>
+                <td>Software Engineer</td>
+                <td>Google</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

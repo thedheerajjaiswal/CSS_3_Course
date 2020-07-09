@@ -1,0 +1,39 @@
+.container{
+    width: 450px;
+    height: 300px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px black;
+    overflow: hidden;
+    position: relative;
+}
+.container img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.container:hover img{
+    transform: scale(1.2,1.2);
+}
+.container .content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0,0,0,0.5);
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+.container .content p{
+    font-size: 18px;
+}
+.container:hover .content{
+    transform: translateY(0%);
+}

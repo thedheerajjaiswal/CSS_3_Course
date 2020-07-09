@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>CSS forms</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+    <style>
+
+        body{
+
+            font-family: Arial, sans-serif;
+
+            background: white url("img/image7.jpeg") no-repeat scroll center;
+
+            background-size: cover;
+
+        }
+
+        .form-div{
+
+            box-shadow: 0 0 5px #8a795d;
+
+            border-radius: 10px;
+
+            width: 500px;
+
+            text-align: center;
+
+            margin: 200px auto;
+
+            background-color: white;
+
+        }
+
+        .form-div h2{
+
+            color:#000000;  
+            margin-top: 10px;
+
+        }
+
+        .fa-user-circle{
+
+            color: lightgrey;
+            text-align: center;
+            font-size: 90px;
+
+            margin-top: -50px;
+
+            box-shadow: 0 0 5px #b87676;
+
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .input-field{
+
+            text-align: left;
+
+            font-size: 18px;
+
+            border: none;
+
+            outline: none;
+
+            margin: 5px;
+
+            height: 70px;
+
+            width: 200px;
+
+            background: transparent;
+
+            color: black;
+
+            border-bottom: 3px solid #6f4541;
+
+        }
+
+        .input-field:focus{
+
+            border-bottom: 3px solid #b87676;
+
+        }
+
+        #submit-btn{
+
+            background-color: white;
+
+            color: black;
+
+            padding: 12px 25px;
+
+            border: 1px;
+            border-style: solid;
+            border-color: gray;
+
+            font-size: 18px;
+
+            margin: 10px 0 15px 0;
+
+            border-radius: 50px;
+
+            width: 150px;
+
+        }
+
+        #submit-btn:hover{
+
+            background-color: white;
+         box-shadow:  -1.5px 1.5px #A9A9A9;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Login Form -->
+
+    <div class="form-div animated flip ">
+
+        <i class="fa fa-user-circle"></i>
+
+        <h2>Create an account</h2>
+
+        <form>
+
+        
+            <input type="text" placeholder="first Name" class="input-field">
+    
+
+            <input type="text" placeholder="last Name" class="input-field">
+
+
+  
+
+            <br>
+            <input type="email" placeholder="email" class="input-field">
+            <br>
+            <input type="number" placeholder="mobile number" class="input-field">
+            <br>
+              
+            <input type="password" placeholder="Password" class="input-field">
+
+            <br>
+            <input type="password" placeholder=" confirm Password" class="input-field">
+
+<br><br>
+            <input type="submit" value="sign up" id="submit-btn">
+
+        </form>
+
+    </div>
+
+</body>
+</html>

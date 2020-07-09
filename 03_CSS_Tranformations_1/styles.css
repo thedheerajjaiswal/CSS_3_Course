@@ -1,0 +1,56 @@
+/*
+    https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function
+*/
+
+section{
+    background-color: lightgreen;
+    font-family: "Comic Sans MS",sans-serif;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+article{
+    background-image: url("../img/image4.jpeg");
+    color: white;
+    width: 230px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.trans-1:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px black;
+}
+
+.trans-2:hover{
+    transform: scale(1.2,1.2);
+    box-shadow: 0 0 20px black;
+}
+
+.trans-3:hover{
+    transform: scale(0.8,0.8);
+    box-shadow: 0 0 20px black;
+}
+
+.trans-4:hover{
+    transform: rotate(-20deg) scale(1.2,1.2);
+    box-shadow: 0 0 20px black;
+}
+
+.trans-5:hover{
+    transform: perspective(400px) rotateX(20deg);
+    box-shadow: 0 0 20px black;
+}
+
+.trans-6:hover{
+     transform: perspective(400px) rotateY(20deg);
+     box-shadow: 0 0 20px black;
+ }
+
+.trans-7:hover{
+    transform: rotate3d(2, -1, -1, -0.2turn);
+    box-shadow: 0 0 20px black;
+}
